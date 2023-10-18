@@ -4,4 +4,94 @@
 
 body {
   font-family: 'Overpass', sans-serif;
+  background-color: hsl(216, 12%, 8%);
+}
+
+.card {
+  background-color: hsl(213, 19%, 18%);
+  max-width: 325px;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.icon {
+  padding: .75rem;
+  background-color: rgba(255,255,255,.1);
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: hsl(25, 97%, 53%);
+}
+
+.card-copy {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+  color: hsl(0, 0%, 100%);
+}
+
+p {
+  color: hsl(217, 12%, 63%);
+  line-height: 1.5rem;
+}
+
+.numbers-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -.25rem;
+}
+
+.number {
+  padding: .75rem;
+  background-color: rgba(255,255,255,.1);
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: hsl(217, 12%, 63%);
+  text-decoration: none;
+}
+
+.number span {
+  margin-bottom: -.25rem;
+}
+
+.number:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+
+.btn {
+  background-color: hsl(25, 97%, 53%);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  border-radius: 10rem;
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+}
+
+.btn:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(0, 0%, 100%);
 }
