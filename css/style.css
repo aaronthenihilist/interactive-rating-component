@@ -5,6 +5,12 @@
 body {
   font-family: 'Overpass', sans-serif;
   background-color: hsl(216, 12%, 8%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .card {
@@ -74,13 +80,13 @@ p {
 }
 
 .number:hover {
-  background-color: hsl(217, 12%, 63%);
-  color: hsl(0, 0%, 100%);
+  background-color: hsl(217, 12%, 63%)!important;
+  color: hsl(0, 0%, 100%)!important;
 }
 
 .btn {
   background-color: hsl(25, 97%, 53%);
-  padding: 1rem;
+  padding: 1rem 1rem .75rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,4 +100,15 @@ p {
 .btn:hover {
   color: hsl(25, 97%, 53%);
   background-color: hsl(0, 0%, 100%);
+}
+
+footer {
+  text-align: center;
+  line-height: 1.5rem;
+  color: hsl(217, 12%, 63%);
+}
+
+footer a {
+  color: hsl(25, 97%, 53%);
+  font-weight: 700;
 }
