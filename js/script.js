@@ -109,9 +109,6 @@ num5.addEventListener("click", function() {
 });
 
 submitBtn.addEventListener("click", function() {
-  if submit === null {
-    alert("Please make a selection before submitting!");
-  } else {
     let numResult = document.getElementById("num-result");
     numResult.innerHTML = submit;
 
@@ -120,5 +117,4 @@ submitBtn.addEventListener("click", function() {
 
     let thankYouCard = document.getElementById("thank-you-card");
     thankYouCard.style.display = 'flex';
-  }
 });
