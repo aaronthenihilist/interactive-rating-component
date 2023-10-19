@@ -109,5 +109,12 @@ num5.addEventListener("click", function() {
 });
 
 submitBtn.addEventListener("click", function() {
-  console.log(submit);
+  let numResult = document.getElementById("num-result");
+  numResult.innerHTML = submit;
+
+  let card = document.getElementById("card");
+  card.style.display = 'none';
+
+  let thankYouCard = document.getElementById("thank-you-card");
+  thankYouCard.style.display = 'flex';
 });

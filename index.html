@@ -14,19 +14,15 @@
 </head>
 <body>
   <main>
-    <div class="card">
-      <!-- Icon -->
+    <div class="card" id="card">
       <div class="icon">
         <i class="fa-solid fa-star"></i>
       </div>
       <div class="card-copy">
-        <!-- Heading (H1) -->
         <h1>How did we do?</h1>
-        <!-- Paragraph -->
         <p>Please let us know how we did with your support request. All feedback is appreciated 
   to help us improve our offering!</p>
       </div>
-      <!-- Number option container -->
       <div class="numbers-container">
         <a href="#/" class="number" id="num1"><span>1</span></a>
         <a href="#/" class="number" id="num2"><span>2</span></a>
@@ -34,23 +30,18 @@
         <a href="#/" class="number" id="num4"><span>4</span></a>
         <a href="#/" class="number" id="num5"><span>5</span></a>
       </div>
-      <!-- Submit button -->
       <a href="#/" class="btn" id="submit">Submit</a>
     </div>
-
   <!-- Thank you state start -->
-
-  <div class="submission-card"></div>
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
+  <div class="thank-you-card" id="thank-you-card">
+    <img src="images/illustration-thank-you.svg" alt="Thank you graphic">
+    <div class="selection-result">
+      <p>You selected <span id="num-result"></span> out of 5</p>
+    </div>
+    <h1>Thank you!</h1>
+    <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!</p>
+  </div>
   </main>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.<br>
