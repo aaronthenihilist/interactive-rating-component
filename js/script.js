@@ -109,7 +109,7 @@ num5.addEventListener("click", function() {
 });
 
 submitBtn.addEventListener("click", function() {
-  if submit = null {
+  if submit == null {
     alert("Please make a selection before submitting!");
   } else {
     let numResult = document.getElementById("num-result");
