@@ -9,7 +9,7 @@ let submit = null;
 let submitBtn = document.getElementById("submit");
 
 num1.addEventListener("click", function() {
-  num1.style.backgroundColor = 'hsl(25, 97%, 53%)';
+  num1.style.backgroundColor = 'hsl(217, 12%, 63%)';
   num1.style.color = 'hsl(0, 0%, 100%)';
 
   submit = 1;
@@ -29,7 +29,7 @@ num1.addEventListener("click", function() {
 });
 
 num2.addEventListener("click", function() {
-  num2.style.backgroundColor = 'hsl(25, 97%, 53%)';
+  num2.style.backgroundColor = 'hsl(217, 12%, 63%)';
   num2.style.color = 'hsl(0, 0%, 100%)';
 
   submit = 2;
@@ -49,7 +49,7 @@ num2.addEventListener("click", function() {
 });
 
 num3.addEventListener("click", function() {
-  num3.style.backgroundColor = 'hsl(25, 97%, 53%)';
+  num3.style.backgroundColor = 'hsl(217, 12%, 63%)';
   num3.style.color = 'hsl(0, 0%, 100%)';
 
   submit = 3;
@@ -69,7 +69,7 @@ num3.addEventListener("click", function() {
 });
 
 num4.addEventListener("click", function() {
-  num4.style.backgroundColor = 'hsl(25, 97%, 53%)';
+  num4.style.backgroundColor = 'hsl(217, 12%, 63%)';
   num4.style.color = 'hsl(0, 0%, 100%)';
 
   submit = 4;
@@ -89,7 +89,7 @@ num4.addEventListener("click", function() {
 });
 
 num5.addEventListener("click", function() {
-  num5.style.backgroundColor = 'hsl(25, 97%, 53%)';
+  num5.style.backgroundColor = 'hsl(217, 12%, 63%)';
   num5.style.color = 'hsl(0, 0%, 100%)';
 
   submit = 5;
@@ -109,12 +109,16 @@ num5.addEventListener("click", function() {
 });
 
 submitBtn.addEventListener("click", function() {
-    let numResult = document.getElementById("num-result");
-    numResult.innerHTML = submit;
+    if (submit == null) {
+      alert("Please make a number selection before hitting submit!");
+    } else {
+      let numResult = document.getElementById("num-result");
+      numResult.innerHTML = submit;
 
-    let card = document.getElementById("card");
-    card.style.display = 'none';
+      let card = document.getElementById("card");
+      card.style.display = 'none';
 
-    let thankYouCard = document.getElementById("thank-you-card");
-    thankYouCard.style.display = 'flex';
+      let thankYouCard = document.getElementById("thank-you-card");
+      thankYouCard.style.display = 'flex';
+    }
 });
