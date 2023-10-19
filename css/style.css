@@ -5,12 +5,13 @@
 body {
   font-family: 'Overpass', sans-serif;
   background-color: hsl(216, 12%, 8%);
-  min-height: 100vh;
+  min-height: calc(100vh - 2rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  padding: 1rem;
 }
 
 .card {
